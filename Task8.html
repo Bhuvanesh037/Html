@@ -10,14 +10,14 @@
     <h2>Create Account</h2>
     <P>Please fill in your information and we all be sending your order in no time.</P>
     <form>
-        <label>Your Name</label>
-        <input type="text" placeholder="Enter your first name">&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" placeholder="Enter your last name"><br><br>
+        <label for="Yourname">Your Name</label>
+        <input type="text" id="yourname" name="yourname" placeholder="Enter your first name">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name"><br><br>
 
-        <label>Your Email</label>
-        <input type="text" placeholder="bhu007@.com" size="60"><br><br>
+        <label for="yourname">Your Email</label>
+        <input type="text" id="youremail" name="youremail" placeholder="bhu007@.com" size="49"><br><br>
 
-        <label>Phone*</label>
+        <label for="phone">Phone*</label>
         <input type="text" placeholder="###">&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="text" placeholder="###">&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="text" placeholder="###">&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
@@ -30,10 +30,10 @@
             <option>sales</option>
         </select><br><br>
 
-        <label>Message *</label><br>
-        <textarea rows="6" cols="40"></textarea><br><br>
+        <label for="message">Message *</label><br>
+        <textarea rows="6" cols="40" id="message"></textarea><br><br>
         
-        <label>Verification*</label>
+        <label  for="Verification">Verification*</label>
         <input type="checkbox">&nbsp;I'am not a robot 🔄<br><br>
         <hr>
         <button type="submit">Submit Form</button>
