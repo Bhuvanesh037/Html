@@ -1,65 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Create Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <form action="/submit" method="post">
+        <lable for="name">Name:</lable>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name">
 
-  <h2>Create Account</h2>
+        <lable for="Last name">Name:</lable>
+        <input type="text" id="last name" name="Last name" placeholder="Enter Your Last Name"><br><br>
 
-  <form>
+        <lable for="mail">E-mail:</form>
+        <input type="text" id="EMail" name="email" placeholder="Enter Your E-mail"required><br><br>
+        
+        <lable for="Password">Password</lable>
+        <input type="text" id="Password" name="password" placeholder="Enter Your Password">
 
-    <table>
 
-      
-      <tr>
-        <td>
-          <label>First Name *</label><br>
-          <input type="text" placeholder="enter your first name">
-        </td>
-        <td>
-          <label>Last Name</label><br>
-          <input type="text" placeholder="enter your last name">
-        </td>
-      </tr>
+        
+        <lable for="Confirm Password">Confirm Password</lable>
+        <input type="text" id="Password" name="password" placeholder="Enter Your Password"><br><br>
 
-     
-      <tr>
-        <td>
-          <label>Email *</label><br>
-          <input type="email" placeholder="enter your email">
-        </td>
-        <td>
-          <label>Password *</label><br>
-          <input type="password" placeholder="enter your password">
-        </td>
-      </tr>
+         <p><strong>Gender</strong></p>
+         
+         
+         <input type="radio" id="male" name="gender">
+         <label for="male">Male</label>
 
-      <tr>
-        <td colspan="2">
-          <label>Confirm Password *</label><br>
-          <input type="password" placeholder="enter your password again" style="width: 98%;">
-        </td>
-      </tr>
+         <input type="radio" id="female" name="gender">
+         <label for="female">Female</label>
 
-    
-      <tr>
-        <td>
-          <label>Gender:</label><br>
-          <input type="radio" name="gender"> Male
-          <input type="radio" name="gender"> Female
-        </td>
-        <td>
-          <label>Hobbies</label><br>
-          <input type="checkbox"> Music
-          <input type="checkbox"> Sports
-          <input type="checkbox"> Travel
-          <input type="checkbox"> Movies
-        </td>
-      </tr>
+         <input type="radio" id="others" name="gender">
+         <label for="others">Others</label>
 
-      <tr>
-        <td>
+         <p><strong>Hobbies</strong></p>
+         <input type="checkbox" id="palying cricket" name="hobbies[]" value="Playing cricket">
+         <lable for="playing cricket">Playing cricket</lable>
+
+          <input type="checkbox" id="traveling" name="hobbies[]" value="traveling">
+         <lable for="traveling">Traveling</lable><br><br>
+
+        
           <label>Source of Income</label><br>
           <select>
             <option>Employed</option>
@@ -67,44 +51,32 @@
             <option>Student</option>
             <option>Other</option>
           </select>
-        </td>
-        <td>
+        
           <label>Income</label><br>
           <input type="range" min="0" max="50000" value="20000">
-          <span>20K</span>
-        </td>
-      </tr>
-
-      
-      <tr>
-        <td>
-          <label>Upload Profile Picture</label><br>
-          <input type="file">
-        </td>
-        <td>
-          <label>Age</label><br>
-          <input type="number" value="18">
-        </td>
-      </tr>
-
-      <tr>
-        <td colspan="2">
-          <label>Bio</label><br>
-          <textarea rows="4" cols="60" placeholder="Write about yourself..."></textarea>
-        </td>
-      </tr>
-
+          <span>20K</span><br><br>
+       
+          <h2>Upload Profile</h2>
+    <form action="/upload" metod="post">
      
-      <tr>
-        <td colspan="2" align="center">
-          <br>
-          <input type="submit" value="Create">
-        </td>
-      </tr>
+        <label for="file">Choose a File</label><br>
+        <input type="file" id="file" name="file"z><br>
+           <br><br>
 
-    </table>
+           <button typw="submit">upload</button>
 
-  </form>
 
+              <lable for="age">age</lable>
+        <input type="text" id="age" name="age" placeholder="age"><br><br>
+
+         
+
+
+
+
+
+        <input type="Submit" value="Submit">
+    </form>
+    
 </body>
 </html>
